@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Bank Application</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="jumbotron text-center">
+    <h1>Bank Application</h1>
+    <button id="accBtn" class="btn btn-primary">Accounts</button>
+    <button id="addBtn" class="btn btn-info">Add Account</button>
+    <button id="editBtn" class="btn btn-warning">Edit/Delete</button>
+  </div>
+
+  <div class="container-fluid">
+
+    <!-- Accounts Main page -->
+    <div class="row main-row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2 class="page-header">Accounts</h2>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Deposit</th>
+                  <th>Credit Card</th>
+                </tr>
+              </thead>
+              <tbody id="main-tbody">
+                <!-- <tr>             OVO VISE NE TREBA - UBACENO KROZ JS
+                <td>1</td>
+                <td>Aleksandar</td>
+                <td>11.000</td>
+                <td>Visa</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Danilo</td>
+                <td>1,500,000</td>
+                <td>MasterCard</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Marija</td>
+                <td>130.000</td>
+                <td>AmercanExpress</td>
+              </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Accounts Main page END-->
+
+    <!-- 2nd Page Add Account -->
+    <div class="row form-row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2 class="page-header">Add Account</h2>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <input id="idForm" type="text" placeholder="id" class="form-control"><br>
+            <input id="nameForm" type="text" placeholder="name" class="form-control"><br>
+            <input id="depositForm" type="text" placeholder="deposit" class="form-control"><br>
+            <input id="cCardForm" type="text" placeholder="credit card" class="form-control"><br>
+            <button id="addFormBtn" class="btn btn-primary form-control">Add Account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 2nd Page Add Account END -->
+
+<!-- 3rd Page Edit/Delete -->
+    <div class="row edit-row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2 class="page-header">Edit/Delete</h2>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Deposit</th>
+                  <th>Credit Card</th>
+                  <th class="text-center">Action</th>
+                </tr>
+              </thead>
+              <tbody id="edit-tbody">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 3rd Page Edit/Delete -->
+
+    <div class="row edit-form-row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2 class="page-header">Edit Account</h2>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <input id="editId" type="text" class="form-control"><br>
+            <input id="editName" type="text" class="form-control"><br>
+            <input id="editDeposit" type="text" class="form-control"><br>
+            <input id="editCcard" type="text" class="form-control"><br>
+            <button id="save" class="btn btn-warning form-control">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="js/main.js"></script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
